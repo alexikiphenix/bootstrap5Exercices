@@ -8,25 +8,25 @@
     <style>
         .my-sizer{height: 75vh;} /* uniquement pour l'exercice ! */
                                  /* Il faut laisser la possibilité au */
-                                 /* conteneur de s'étendre en hauteur */
-  
+                                 /* conteneur de s'étendre en hauteur */  
     </style>
     <title>Grid system</title>
 </head>
 <body>
     <div class="container my-sizer border border-dark">        
-        <nav class="row connexion h-25"> <!-- h-25 = height: 25% -->           
+        <nav class="row connexion h-25"> <!-- h-25 = height: 25% ne fonctionne -->   
+                                         <!-- que si hauteur du conteneur défini -->        
             <div class="col-10 border border-dark"></div>
             <div class="col-2 border border-dark"></div>
         </nav>
-        <div class="row header h-25">
+        <header class="row header h-25">  
             <div class="col-12 border border-dark"></div>            
-        </div>
-        <div class="row main h-50">
+        </header>
+        <main class="row h-50">  <!-- h-50 = height: 50% -->  
             <div class="col-3 border border-dark"></div>
             <div class="col-6 border border-dark"></div>
             <div class="col-3 border border-dark"></div>
-        </div>
+        </main>
     </div>
 </body>
 </html>
