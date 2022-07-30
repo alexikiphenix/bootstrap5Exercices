@@ -30,9 +30,9 @@
    
     <script>
         let mainBar = document.querySelector('#mainBar');
-        let i = 0;
-        
-       const setBarWidth = () =>{   
+        let i = 0;     
+
+        const setBarWidth = () =>{   
             if(i <= 100)    
             {
                 mainBar.style.width = `${i}%`;  
@@ -40,9 +40,9 @@
                 console.log(i)              
                 i++;  
             }            
-        }
-        
-        setInterval(setBarWidth, 100); 
+        }       
+
+        setInterval(setBarWidth, 100); // exécute la fonction setBarWidth toutes les 100ms (1/10e de seconde)
   
         
     </script>
